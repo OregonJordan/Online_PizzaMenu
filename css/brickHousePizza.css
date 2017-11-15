@@ -1,0 +1,59 @@
+/*--Menus--*/
+form {
+	font-family: "Roboto", sans-serif;
+	padding-top: 5px;
+}
+
+input	{
+	margin-top: 10px;
+}
+
+legend	{
+	font-family: "Roboto", sans-serif;
+	font-size: 40px;
+	color: #ff3300;
+	text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 1px black;
+}
+
+/*--End Menus--*/
+
+/*--Order Button--*/
+#btnOrder	{
+	background-color: #f44336;
+    color: white; 
+    border: 2px solid #f44336;
+	height: 50px;
+	width: 230px;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.2s;
+    cursor: pointer;
+	font-size: 16px;
+	text-decoration: underline white;
+	
+}
+
+#btnOrder:hover	{
+	background-color: white;
+    color: black;
+	text-decoration: underline red;
+}
+/*--End Order Button--*/
+
+#showText	{
+	padding-bottom: -5px;
+}
+
+
+
+/*--Logo--*/
+.mainlogo img	{
+	width: auto;
+	height: auto;
+}
+
+@media only screen and (max-width: 300px) {
+    .mainlogo img {
+        width: 120%;;
+    }
+}
+/*--End Logo--*/

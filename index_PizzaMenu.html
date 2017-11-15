@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Brick House Pizza...</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/brickHousePizza.css">
+	</head>
+
+	<body>
+	
+	<!--Logo-->
+	<div class="mainlogo">
+		<img src="./images/pizza_logo.png" alt="">
+	</div>
+	
+	<!--Pizza Size Menu-->
+	<form>
+		<fieldset>
+			<legend><img src="./images/legend_logo.jpg" alt="" align="left">Select Your Size...</legend>
+			<input class="size" type="radio" name="size" value="Personal Pizza">Personal Pizza</input>
+			<br>
+			<input class="size" type="radio" name="size" value="Medium Pizza">Medium Pizza</input>
+			<br>
+			<input class="size" type="radio" name="size" value="Large Pizza" checked>Large Pizza</input>
+			<br>
+			<input class="size" type="radio" name="size" value="Extra Large Pizza">Extra Large Pizza</input>
+		</fieldset>
+	</form>
+	<!--/Pizza Size Menu-->
+	
+	<br>
+	
+	<!--Sauce Menu-->
+	<form>
+		<fieldset>
+			<legend><img src="./images/legend_logo.jpg" alt="" align="left">Select Your Sauce...</legend>
+			<input class="sauce" type="radio" name="sauce" value="Marinara Sauce" checked>Marinara Sauce</input>
+			<br>
+			<input class="sauce" type="radio" name="sauce" value="White Sauce">White Sauce</input>
+			<br>
+			<input class="sauce" type="radio" name="sauce" value="Barbeque Sauce">Barbeque Sauce</input>
+			<br>
+			<input class="sauce" type="radio" name="sauce" value="No Sauce">No Sauce</input>
+		</fieldset>
+	</form>
+	<!--/Sauce Menu-->
+	
+	<br>
+	
+	<!--Crust Menu-->
+	<form>
+		<fieldset>
+			<legend><img src="./images/legend_logo.jpg" alt="" align="left">Select Your Crust...</legend>
+			<input class="crust" type="radio" name="crust" value="Plain Crust" checked>Plain Crust</input>
+			<br>
+			<input class="crust" type="radio" name="crust" value="Garlic Butter Crust">Garlic Butter Crust</input>
+			<br>
+			<input class="crust" type="radio" name="crust" value="Spicy Crust">Spicy Crust</input>
+			<br>
+			<input class="crust" type="radio" name="crust" value="House Special Crust">House Special Crust</input>
+			<br>
+			<input class="crust" type="radio" name="crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust &nbsp&nbsp<sup><i>add <strong><u>$3.00</strong></u></sup></i></input>
+		</fieldset>
+	</form>
+	<!--/Crust Menu-->
+	
+	<br>
+	
+	<!--Cheese Menu-->
+	<form>
+		<fieldset>
+			<legend><img src="./images/legend_logo.jpg" alt="" align="left">Select Your Cheese...</legend>
+			<input class="cheese" type="radio" name="cheese" value="Regular Cheese" checked>Regular Cheese</input>
+			<br>
+			<input class="cheese" type="radio" name="cheese" value="No Cheese">No Cheese</input>
+			<br>
+			<input class="cheese" type="radio" name="cheese" value="Extra Cheese">Extra Cheese &nbsp&nbsp<sup><i>add <strong><u>$3.00</strong></u> on any size pizza</sup></i></input>
+		</fieldset>
+	</form>
+	<!--/Cheese Menu-->
+	
+	<br>
+	
+	<!--Meats Menu-->
+	<form>
+		<fieldset>
+			<legend><img src="./images/legend_logo.jpg" alt="" align="left">Select Your Meats...</legend>
+			<input class="meats" type="checkbox" name="meat" value="Pepperoni">Pepperoni</input>
+			<br>
+			<input class="meats" type="checkbox" name="meat" value="Sausage">Sausage</input>
+			<br>
+			<input class="meats" type="checkbox" name="meat" value="Canadian Bacon">Canadian Bacon</input>
+			<br>
+			<input class="meats" type="checkbox" name="meat" value="Ground Beef">Ground Beef</input>
+			<br>
+			<input class="meats" type="checkbox" name="meat" value="Anchovy">Anchovy</input>
+			<br>
+			<input class="meats" type="checkbox" name="meat" value="Premium Chicken">Premium Chicken</input>
+			<p><i>add <strong><u>$1.00</strong></u> for each additional meat item beyond the first complementary meat item</i></p>
+		</fieldset>
+	</form>
+	<!--/Meats Menu-->
+	
+	<br>
+	
+	<!--Veggies Menu-->
+	<form>
+		<fieldset>
+			<legend><img src="./images/legend_logo.jpg" alt="" align="left">Select Your Veggies...</legend>
+			<input class="veggies" type="checkbox" name="veggies" value="Tomatoes">Tomatoes</input>
+			<br>
+			<input class="veggies" type="checkbox" name="veggies" value="Onions">Onions</input>
+			<br>
+			<input class="veggies" type="checkbox" name="veggies" value="Olives">Olives</input>
+			<br>
+			<input class="veggies" type="checkbox" name="veggies" value="Green Peppers">Green Peppers</input>
+			<br>
+			<input class="veggies" type="checkbox" name="veggies" value="Mushrooms">Mushrooms</input>
+			<br>
+			<input class="veggies" type="checkbox" name="veggies" value="Pineapple">Pineapple</input>
+			<br>	
+			<input class="veggies" type="checkbox" name="veggies" value="Spinach">Spinach</input>
+			<br>	
+			<input class="veggies" type="checkbox" name="veggies" value="Jalape&ntilde;o">Jalape&ntilde;o</input>
+			<p><i>add <strong><u>$1.00</strong></u> for each additional veggie item beyond the first complementary veggie item</i></p>
+			<br>					
+		</fieldset>
+	</form>
+	<!--/Veggies Menu-->
+	
+	<!--Place Order Button-->
+	<input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+
+	<!--Receipt-->
+	<div id="cart">
+		<div id="showText"></div>
+		<div id="totalPrice"></div>
+	</div>
+	
+	<!--Receipt Script-->
+	<script src="./js/pizza_order_price.js"></script>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	
+	</body>
+</html>
